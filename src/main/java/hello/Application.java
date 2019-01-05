@@ -9,6 +9,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 public class Application {
 
     public static void main(String[] args) {
+	logger.info("Initializing application...");
         SpringApplication.run(Application.class, args);
     }
 
