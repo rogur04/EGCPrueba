@@ -9,7 +9,6 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 public class Application {
 
     public static void main(String[] args) {
-	logger.info("Initializing task-manager");
         SpringApplication.run(Application.class, args);
     }
 
