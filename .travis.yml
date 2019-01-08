@@ -1,9 +1,16 @@
 language: java
 jdk:
-  - oraclejdk8
+- oraclejdk8
 notifications:
   email:
     recipients:
     - neigmer_14@hotmail.com
     on_success: always
     on_failure: always
+deploy:
+  provider: heroku
+  api_key:
+    secure: v/+EtuhlP3j4VqFTlda/FUl8KoYjregzmE/uVKe1mZ1pS6W2JIyy1GEvYoAHSHsg8jCe8okEKTrvfXGlfuLEwQZXxAkax+Rv49dAAT59qmc7R2wiR+AlCgfPjAp5co00hFdC83znf2I4hiG1KcSjJ8x8qAM/EE3uaVascDVq5u5ea20Pfir1QKegvQLJdXQP3NMPLDnx1vw9pK2PAyi1pvcbWVmZlqD/8i+DJZ3Pcwwyjh2/meOrvrmvJEm7hHsQDQCTI1ByO/b3nUBwprc8J18udwEXKwiDy5Dj4U/oPj2U+78/fqmntr8YPv41/wDN373FeVs5yn/TqekcsixgN3yPiejE2GC0ZgnQN743BPXY0k7Tyh4Jp+VoRCjYfNCcIFX1Wf4xghLW0ggtirp0NKS0oTaegVnEnjMZoVa1suZBhp+Y2d8Vj6X9W5t2DnJve78hqvRqxJswMOXvjJP5pdjibRo2G2Ad8CA1gu2MiocDVPacvLjYLC9BhIGYWCPaUdmOfy1g/HGe5iNNFcVeg7HRaGp70D2zNioS6hNr3OqTPLzuvp007W7QCp2NyS7Sm/0lweRpAOORWYCrDIXqjVZlLX0V0AXm/oc48kl60mNAqOJp0Zl4L1TutuubK8/7v6dDOcGX3xo1Bl5jX0/tuPYxtlhXb8aCnIEwO31Zf1A=
+  app: prueba-egc159
+  on:
+    repo: rogur04/bye-java
